@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --slate300: hsl(212, 45%, 89%);
+    --slate500: hsl(216, 15%, 48%);
+    --slate900: hsl(218, 44%, 22%);
+    --attribution: hsl(228, 45%, 44%);
+    --primary-font: 'Outfit', Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;  /* Ensure the body and html take full height */
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--slate300);
+    color: var(--slate900);
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    max-width: 360px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 15px;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.heading {
+    font-size: 1.6rem;
+    color: var(--slate900);
+    text-align: center;
+    margin: 15px;
+    font-weight: 700;
+}
+
+.text{
+    font-size: 1.1rem;
+    color: var(--slate500);
+    text-align: center;
+    font-weight: 300;
+    margin: 20px;
+}
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--attribution);
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+  body {
+    font-size: 2rem;
+    padding: 20px;
+  }
+
+  .attribution {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: var(--attribution);
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1440px) {
+  body {
+    font-size: 2rem;
+    padding: 30px;
+  }
+
+  .attribution {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: var(--attribution);
+  }
+}
